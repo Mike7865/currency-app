@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+  padding: 0;
+  margin: 0
+}
+
+.currencyApp {
+  text-align: center;
+  position: relative;
+}
+
+/* header */
+.headerPanel {
+  display: flex;
+  justify-content: center;
+  background-color: #00c853;
+}
+
+.header h1 {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 280px) {
+  .header h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  .header h1 {
+    font-size: 16px;
+  }
+}
+
+/* container */
+.currencyAppContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* table */
+.currencyRow, .mainCurrencyRow {
+  width: 650px;
+  height: 55px;
+  border-bottom: 1px solid black;
+  background: #eeeeee;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  .currencyRow, .mainCurrencyRow {
+    width: 525px;
+    height: 80px;
+  }
+}
+
+.currencyRow:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.currencyRowDesc {
+  width: 174px;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .currencyRowDesc {
+    margin-top: 10px;
+  }
+}
+
+.countryFlag {
+  width: 50px;
+  margin-left: 20px;
+} 
+
+@media only screen and (max-width: 480px) {
+  .countryFlag {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .countryFlag {
+    margin-left: 115px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .countryFlag {
+    width: 30px;
+    margin-left: 155px;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .description {
+    flex-direction: column;
+    margin-left: 18px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .description {
+    margin-left: 11px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .description {
+    margin-left: 5px;
+  }
+}
+
+.descriptionCountry {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 65px;
+  font-size: 23px;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+  .descriptionCountry {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .descriptionCountry {
+    font-size: 12px;
+  }
+}
+
+.descriptionCurrency {
+  width: 100px;
+  margin-top: 10px;   
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-size: 12px; 
+  text-align: left;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+  .descriptionCurrency {
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .descriptionCurrency {
+    font-size: 10px;
+  }
+}
+
+.currencyRates {
+  width: 290px;
+  height: 47px;
+  margin-left: 120px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  .currencyRates {
+    margin-top: 2px;
+    margin-left: 150px;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .currencyRates {
+    margin-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .currencyRates {
+    margin-left: 110px;
+  }
+}
+
+.quantity {
+  color: black;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 50%;
+  margin-top: 12px;
+  margin-right: 7px; 
+  text-align: right;
+}
+
+@media only screen and (max-width: 280px) {
+  .quantity {
+    font-size: 12px;
+  }
+}
+
+.quantityExchange {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 200px;
+  height: 12px;
+  margin-top: 15px;
+  margin-right: 5px;
+  text-align: right;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .quantity, .quantityExchange {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .quantityExchange {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .quantityExchange {
+    font-size: 10px;
+  }
+}
+
+.left {
+  float: left
+} 
